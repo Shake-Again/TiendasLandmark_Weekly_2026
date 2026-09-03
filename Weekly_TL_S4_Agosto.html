@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Tiendas Landmark — Agosto</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f4f3ee;color:#1a1a18;font-size:15px;line-height:1.7;padding:2rem 1rem}.page{max-width:880px;margin:0 auto}.card{background:#fff;border-radius:16px;border:.5px solid #e0dfd8;padding:1.75rem 2rem;margin-bottom:1.1rem}h1{font-size:22px;font-weight:500;margin-bottom:4px}.subtitle{font-size:13px;color:#888780}.st{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#888780;margin:0 0 12px;border-bottom:.5px solid #e0dfd8;padding-bottom:6px}.g{display:grid;gap:10px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}.mc{background:#f4f3ee;border-radius:8px;padding:12px 14px}.ml{font-size:11px;color:#888780;margin:0 0 3px}.mv{font-size:20px;font-weight:500;margin:0}.ms{font-size:11px;color:#888780;margin:3px 0 0}.up{color:#1D9E75}.warn{color:#BA7517}.dn{color:#D85A30}.nb{background:#E1F5EE;border-left:3px solid #1D9E75;border-radius:0 8px 8px 0;padding:10px 14px;font-size:13px;line-height:1.6;margin-top:10px}.wb{background:#FAEEDA;border-left:3px solid #BA7517;border-radius:0 8px 8px 0;padding:10px 14px;font-size:13px;line-height:1.6;margin-top:10px}table.t{width:100%;border-collapse:collapse;font-size:12px}table.t th{text-align:left;color:#888780;font-weight:500;padding:5px 8px 7px;border-bottom:.5px solid #e0dfd8;font-size:11px;text-transform:uppercase;letter-spacing:.04em}table.t td{padding:7px 8px;border-bottom:.5px solid #e0dfd8;vertical-align:middle}table.t tr:last-child td{border-bottom:none}.total-row td{background:#f9f9f7;font-weight:500}.tag{font-size:10px;color:#888780;display:block;margin-top:1px}strong{font-weight:500}.prog-wrap{background:#e0dfd8;border-radius:4px;height:6px;margin-top:6px;overflow:hidden}.prog-bar{height:100%;border-radius:4px}.week-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}.week-card{background:#f4f3ee;border-radius:10px;padding:14px}.week-title{font-size:11px;font-weight:500;color:#888780;margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em}.week-row{display:flex;justify-content:space-between;font-size:12px;padding:3px 0;border-bottom:.5px solid #e0dfd8}.week-row:last-child{border-bottom:none}.week-label{color:#888780}.checklist{display:flex;flex-direction:column;gap:5px}.cl-item{display:flex;align-items:flex-start;gap:12px;background:#f4f3ee;border-radius:10px;padding:11px 14px}.cl-icon{font-size:17px;flex-shrink:0;margin-top:1px}.cl-label{font-size:12px;font-weight:500;margin-bottom:1px}.cl-sub{font-size:11px;color:#888780}.cl-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:8px;font-weight:500;margin-left:6px}.cl-now{background:#E1F5EE;color:#0F6E56}.cl-next{background:#E6F1FB;color:#185FA5}.badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;font-weight:500}.b-green{background:#E1F5EE;color:#0F6E56}.b-amber{background:#FAEEDA;color:#854F0B}.b-gray{background:#F1EFE8;color:#5F5E5A}.b-blue{background:#E6F1FB;color:#185FA5}
+@media(max-width:700px){.g4{grid-template-columns:repeat(2,1fr)}.week-grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><div class="page">
+
+<div class="card">
+  <h1>Tiendas Landmark — Resumen mensual agosto</h1>
+  <p class="subtitle">Mes cerrado (1–31/8) · Julio vs agosto · Cortes semanales 1-7 · 8-15 · 16-23 · 24-31 · Meta + Google + TikTok</p>
+</div>
+
+<!-- KPIs -->
+<div class="card">
+  <div class="st">Agosto cerrado — resultados del mes</div>
+  <div class="g g4" style="margin-bottom:10px">
+    <div class="mc"><p class="ml">Facturación backend</p><p class="mv up">$200,5M</p><p class="ms up">Obj. $212M → 94,6%</p><p class="ms">vs julio: $181,4M <span class="up">(▲10,6%)</span></p><div class="prog-wrap"><div class="prog-bar" style="width:94.6%;background:#1D9E75"></div></div></div>
+    <div class="mc"><p class="ml">Pedidos</p><p class="mv up">811</p><p class="ms up">vs julio: 486 <span class="up">(▲66,9%)</span></p></div>
+    <div class="mc"><p class="ml">Ticket promedio</p><p class="mv">$247.264</p><p class="ms">vs julio: $373.183 <span class="dn">(▼33,7%)</span></p></div>
+    <div class="mc"><p class="ml">ACOS performance</p><p class="mv up">5,92%</p><p class="ms">Inv. perf $11,87M</p></div>
+  </div>
+  <div class="g g4">
+    <div class="mc"><p class="ml">ACOS total</p><p class="mv up">9,36%</p><p class="ms">Inv. total $18,77M</p></div>
+    <div class="mc"><p class="ml">Inv. performance</p><p class="mv">$11,87M</p><p class="ms">Plan $17,96M → 66,1%</p></div>
+    <div class="mc"><p class="ml">Inv. total</p><p class="mv">$18,77M</p><p class="ms">Plan+Sale $26,74M → 70,2%</p></div>
+    <div class="mc"><p class="ml">Unidades vendidas</p><p class="mv">2.125</p><p class="ms">Ago full</p></div>
+  </div>
+  <div class="wb" style="margin-top:10px">Agosto cierra en $200,5M — 94,6% del objetivo de $212M, muy cerca de la meta. La inversión de performance quedó en 66,1% del plan ($11,87M de $17,96M) — el mes cerró con margen de presupuesto sin ejecutar, algo a tener en cuenta para la planificación de septiembre.</div>
+</div>
+
+<!-- COMPARATIVA -->
+<div class="card">
+  <div class="st">Mes completo — julio vs agosto</div>
+  <table class="t" style="margin-bottom:12px">
+    <thead><tr><th></th><th>Julio</th><th>Agosto</th><th>Var.</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Facturación</strong></td><td>$181,4M</td><td><span class="up">$200,5M</span></td><td><span class="up">▲10,6%</span></td></tr>
+      <tr><td><strong>Pedidos</strong></td><td>486</td><td><span class="up">811</span></td><td><span class="up">▲66,9%</span></td></tr>
+      <tr><td><strong>Ticket promedio</strong></td><td>$373.183</td><td>$247.264</td><td><span class="dn">▼33,7%</span></td></tr>
+    </tbody>
+  </table>
+  <div class="wb">Agosto factura 10,6% más que julio con 66,9% más pedidos — el ticket bajó 33,7% por el peso de Salama en el mix, que consolidó su liderazgo en el mes. La estructura de ventas terminó de confirmar el giro hacia mayor volumen con menor ticket unitario que se venía observando desde principios de mes.</div>
+</div>
+
+<!-- GRÁFICO FACTURACIÓN -->
+<div class="card">
+  <div class="st">Facturación diaria — agosto</div>
+  <canvas id="chartFac" style="max-height:200px"></canvas>
+</div>
+
+<!-- SEMANAL -->
+<div class="card">
+  <div class="st">Transición semanal — Agosto</div>
+  <div class="week-grid">
+    <div class="week-card">
+      <div class="week-title">1–7/8</div>
+      <div class="week-row"><span class="week-label">Facturación</span><span>$46,9M</span></div>
+      <div class="week-row"><span class="week-label">Pedidos</span><span>182</span></div>
+      <div class="week-row"><span class="week-label">Ticket</span><span>$257.902</span></div>
+      <div class="week-row"><span class="week-label">ACOS-P</span><span class="up">5,76%</span></div>
+    </div>
+    <div class="week-card">
+      <div class="week-title">8–15/8</div>
+      <div class="week-row"><span class="week-label">Facturación</span><span>$44,0M</span></div>
+      <div class="week-row"><span class="week-label">Pedidos</span><span>209</span></div>
+      <div class="week-row"><span class="week-label">Ticket</span><span class="dn">$210.328</span></div>
+      <div class="week-row"><span class="week-label">ACOS-P</span><span class="up">6,50%</span></div>
+    </div>
+    <div class="week-card">
+      <div class="week-title">16–23/8</div>
+      <div class="week-row"><span class="week-label">Facturación</span><span class="up">$53,9M</span></div>
+      <div class="week-row"><span class="week-label">Pedidos</span><span>220</span></div>
+      <div class="week-row"><span class="week-label">Ticket</span><span>$244.817</span></div>
+      <div class="week-row"><span class="week-label">ACOS-P</span><span class="up">5,76%</span></div>
+    </div>
+    <div class="week-card" style="background:#E1F5EE">
+      <div class="week-title" style="color:#0F6E56">24–31/8 ⭐</div>
+      <div class="week-row"><span class="week-label">Facturación</span><span class="up">$55,8M</span></div>
+      <div class="week-row"><span class="week-label">Pedidos</span><span>200</span></div>
+      <div class="week-row"><span class="week-label">Ticket</span><span class="up">$278.871</span></div>
+      <div class="week-row"><span class="week-label">ACOS-P</span><span class="up">5,76%</span></div>
+    </div>
+  </div>
+  <div class="nb">La última semana fue la de mayor facturación del mes ($55,8M) y también la de mejor ticket promedio ($279K, el más alto de las 4 semanas). El ACOS performance se mantuvo notablemente estable las últimas 3 semanas (5,76% exacto en 3 de las 4 semanas) — la eficiencia de la cuenta está muy consolidada.</div>
+</div>
+
+<!-- TRÁFICO -->
+<div class="card">
+  <div class="st">Evolución de sesiones — julio vs agosto</div>
+  <canvas id="chartSess" style="max-height:200px;margin-bottom:12px"></canvas>
+  <table class="t">
+    <thead><tr><th>Período</th><th>Sess/día prom.</th><th>vs media julio</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1–7/8</strong></td><td class="up">5.045</td><td><span class="up">▲6%</span></td></tr>
+      <tr><td><strong>8–15/8</strong></td><td>4.697</td><td>▼2%</td></tr>
+      <tr><td><strong>16–23/8</strong></td><td class="up">5.358</td><td><span class="up">▲12%</span></td></tr>
+      <tr><td><strong>24–31/8</strong></td><td class="up">5.208</td><td><span class="up">▲9%</span></td></tr>
+      <tr><td><strong>Media julio</strong></td><td>4.779</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <div class="wb">Las sesiones se mantuvieron por encima de la media de julio en 3 de las 4 semanas del mes. El pico del 30/8 (10.488 sesiones, más del doble del promedio) coincide con el cierre de mes — probablemente asociado a una acción puntual de tráfico o promoción de cierre.</div>
+</div>
+
+<!-- GA4 FUNNEL -->
+<div class="card">
+  <div class="st">Funnel GA4 — agosto completo</div>
+  <div style="display:flex;flex-direction:column;gap:0;margin-bottom:10px">
+    <div style="background:#185FA5;color:#fff;border-radius:10px 10px 0 0;padding:16px 20px;text-align:center">
+      <div style="font-size:11px;opacity:0.8;text-transform:uppercase;letter-spacing:.06em">Sesiones</div>
+      <div style="font-size:28px;font-weight:500">157.419</div>
+      <div style="font-size:11px;opacity:0.7">89.245 nuevos (56,7%)</div>
+    </div>
+    <div style="background:#2A7BC7;color:#fff;padding:14px 20px;text-align:center;margin:0 20px">
+      <div style="font-size:11px;opacity:0.8;text-transform:uppercase;letter-spacing:.06em">Add to Cart</div>
+      <div style="font-size:24px;font-weight:500">22.770</div>
+      <div style="font-size:11px;opacity:0.7">14,5% de las sesiones</div>
+    </div>
+    <div style="background:#1D9E75;color:#fff;border-radius:0 0 10px 10px;padding:14px 20px;text-align:center;margin:0 60px">
+      <div style="font-size:11px;opacity:0.8;text-transform:uppercase;letter-spacing:.06em">Transacciones</div>
+      <div style="font-size:22px;font-weight:500">495</div>
+      <div style="font-size:11px;opacity:0.7">2,2% de ATC · CVR total 0,31%</div>
+    </div>
+  </div>
+</div>
+
+<!-- META ADS -->
+<div class="card">
+  <div class="st">Meta Ads — agosto completo</div>
+  <table class="t" style="margin-bottom:14px">
+    <thead><tr><th>Campaña</th><th>Inv.</th><th>Comp.</th><th>Revenue</th><th>ROAS</th><th>Ticket</th></tr></thead>
+    <tbody>
+      <tr><td><strong>High Tickets</strong></td><td>$2.484.979</td><td>86</td><td>$19.093.360</td><td><span class="up">7,68</span></td><td>$222.016</td></tr>
+      <tr><td><strong>Low Tickets</strong></td><td>$1.563.059</td><td>73</td><td>$14.099.380</td><td><span class="up">9,02</span></td><td>$193.142</td></tr>
+      <tr><td><strong>Catálogo Adv</strong></td><td>$1.384.679</td><td>53</td><td>$9.061.796</td><td><span class="up">6,54</span></td><td>$170.977</td></tr>
+      <tr><td><strong>Mid Tickets</strong></td><td>$1.329.683</td><td>39</td><td>$8.193.555</td><td><span class="up">6,16</span></td><td>$210.091</td></tr>
+      <tr><td><strong>RMKT OpenMix</strong></td><td>$1.299.285</td><td>41</td><td>$8.145.422</td><td><span class="up">6,27</span></td><td>$198.669</td></tr>
+      <tr><td><strong>RMKT High Tickets</strong></td><td>$1.206.809</td><td>41</td><td>$6.466.930</td><td><span class="up">5,36</span></td><td>$157.730</td></tr>
+      <tr class="total-row"><td>Total performance Meta</td><td>$9.268.494</td><td>333</td><td>$65.060.443</td><td>7,02</td><td>$195.377</td></tr>
+    </tbody>
+  </table>
+
+  <div class="st">Top anuncios — agosto (con compras)</div>
+  <table class="t">
+    <thead><tr><th>Anuncio</th><th>Campaña</th><th>Inv.</th><th>Comp.</th><th>Revenue</th><th>ROAS</th><th>Ticket</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VID_Post_LS4_Muebles</strong><span class="tag">⭐ post LS 24/6 · mejor ticket</span></td><td>High Tkt</td><td>$525.821</td><td>17</td><td>$8.466.100</td><td><span class="up">16,10</span></td><td><span class="up">$498.006</span></td></tr>
+      <tr><td><strong>VID_Post_Alfombra_Salamanca</strong></td><td>High Tkt</td><td>$1.093.405</td><td>48</td><td>$7.243.130</td><td><span class="up">6,62</span></td><td>$150.899</td></tr>
+      <tr><td><strong>IMG_Alfombra_Salamanca 05-08 (copia)</strong></td><td>Low Tkt</td><td>$732.828</td><td>35</td><td>$6.965.080</td><td><span class="up">9,50</span></td><td>$199.002</td></tr>
+      <tr><td><strong>Catalogo_All</strong></td><td>Catálogo Adv</td><td>$954.456</td><td>36</td><td>$6.837.170</td><td><span class="up">7,16</span></td><td>$189.921</td></tr>
+      <tr><td><strong>VID_Alfombra_Salamanca 05-08 (copia)</strong></td><td>Low Tkt</td><td>$316.970</td><td>23</td><td>$3.962.560</td><td><span class="up">12,50</span></td><td>$172.285</td></tr>
+      <tr><td><strong>IMG_Alfombra_Salamanca 05-08</strong></td><td>Mid Tkt</td><td>$432.795</td><td>21</td><td>$3.817.900</td><td><span class="up">8,82</span></td><td>$181.805</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- GOOGLE -->
+<div class="card">
+  <div class="st">Google Ads — agosto completo</div>
+  <table class="t" style="margin-bottom:12px">
+    <thead><tr><th>Campaña</th><th>Etapa</th><th>Inv.</th><th>CTR</th><th>Compras</th><th>Revenue</th><th>ROAS</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Brand Search</strong></td><td><span class="badge b-green">Perf</span></td><td>$717.490</td><td><span class="up">39,23%</span></td><td>77,0</td><td>$16.553.043</td><td><span class="up">23,07</span></td></tr>
+      <tr><td><strong>PMax Purchase General</strong></td><td><span class="badge b-green">Perf</span></td><td>$1.540.426</td><td>1,10%</td><td>45,5</td><td>$11.477.395</td><td><span class="up">7,45</span></td></tr>
+      <tr><td><strong>PMax Tráfico</strong></td><td><span class="badge b-gray">Tráfico</span></td><td>$477.767</td><td>3,53%</td><td>9,3</td><td>$1.461.452</td><td><span class="up">3,06</span></td></tr>
+      <tr><td><strong>Search Purchase HighTicket</strong></td><td><span class="badge b-green">Perf</span></td><td>$347.653</td><td>4,63%</td><td>8,0</td><td>$1.887.093</td><td><span class="up">5,43</span></td></tr>
+      <tr><td><strong>PMax GeoLocal</strong></td><td><span class="badge b-amber">Geo</span></td><td>$299.501</td><td>3,83%</td><td>13,7</td><td>$2.252.900</td><td><span class="up">7,52</span></td></tr>
+      <tr><td><strong>Video Awareness Geo</strong></td><td><span class="badge b-gray">Brand</span></td><td>$248.370</td><td>0,05%</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td><strong>Search Conquest</strong></td><td><span class="badge b-blue">Conquista</span></td><td>$214.223</td><td>0,79%</td><td>—</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <div class="nb">Brand Search cerró el mes como el canal más eficiente de toda la cuenta: ROAS 23,07, CTR 39,23% y $16,55M de revenue con solo $717K invertidos. PMax Purchase General fue el de mayor revenue absoluto ($11,48M).</div>
+</div>
+
+<!-- CATEGORÍAS -->
+<div class="card">
+  <div class="st">Revenue por categoría — agosto completo</div>
+
+  <p style="font-size:11px;color:#888780;margin-bottom:8px">Evolución del share de facturación por categoría — ventana móvil de mes vigente + 12 meses anteriores. Actualmente solo Jul-Ago tienen detalle de producto cargado; se suman automáticamente los meses siguientes a medida que estén disponibles</p>
+  <canvas id="chartCatLine" style="max-height:220px;margin-bottom:16px"></canvas>
+
+  <div class="g g2" style="margin-bottom:16px">
+    <div>
+      <p style="font-size:11px;color:#888780;text-align:center;margin-bottom:6px;font-weight:500">Julio — % share por categoría</p>
+      <canvas id="chartCatPieJul" style="max-height:220px"></canvas>
+    </div>
+    <div>
+      <p style="font-size:11px;color:#888780;text-align:center;margin-bottom:6px;font-weight:500">Agosto — % share por categoría</p>
+      <canvas id="chartCatPieAgo" style="max-height:220px"></canvas>
+    </div>
+  </div>
+
+  <table class="t" style="margin-bottom:10px">
+    <thead><tr><th>Categoría</th><th>Revenue</th><th>Share</th><th>Uds.</th><th>Ticket/u</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Dormitorio y Baño</strong></td><td>$8.077.310</td><td>4,5%</td><td>172</td><td>$46.961</td></tr>
+      <tr><td><strong>Organización</strong></td><td>$4.786.730</td><td>2,7%</td><td>273</td><td>$17.534</td></tr>
+      <tr><td><strong>Iluminación</strong></td><td>$2.754.230</td><td>1,5%</td><td>24</td><td>$114.760</td></tr>
+      <tr><td><strong>Bazar</strong></td><td>$10.548.760</td><td>5,9%</td><td>641</td><td>$16.457</td></tr>
+      <tr><td><strong>Muebles</strong></td><td>$51.488.975</td><td>28,8%</td><td>156</td><td><span class="up">$330.058</span></td></tr>
+      <tr><td><strong>Alfombras</strong><span class="tag">Salama domina el mix</span></td><td>$92.018.725</td><td><span class="up">51,5%</span></td><td>621</td><td>$148.178</td></tr>
+      <tr><td><strong>Decoración</strong></td><td>$4.673.418</td><td>2,6%</td><td>168</td><td>$27.818</td></tr>
+      <tr><td><strong>Aromas</strong></td><td>$1.402.080</td><td>0,8%</td><td>70</td><td>$20.030</td></tr>
+      <tr class="total-row"><td>Total</td><td>$178.528.609</td><td>100%</td><td>2.125</td><td>$84.014</td></tr>
+    </tbody>
+  </table>
+  <div class="nb">Alfombras cierra el mes como categoría dominante (51,5%, vs 27,2% en julio) consolidada por Salama. Muebles mantiene el ticket unitario más alto ($330K/u) — la categoría de menor volumen pero mayor valor por unidad.</div>
+</div>
+
+<!-- TOP 10 -->
+<div class="card">
+  <div class="st">Top 10 productos — agosto completo</div>
+  <table class="t">
+    <thead><tr><th>#</th><th>Producto</th><th>Uds.</th><th>Revenue</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Salama Ser 200×290</strong><span class="tag">⭐ producto líder del mes</span></td><td>91</td><td>$16.299.350</td></tr>
+      <tr><td>2</td><td><strong>Salama Tur 200×290</strong></td><td>56</td><td>$8.611.500</td></tr>
+      <tr><td>3</td><td><strong>Salama Ser 160×230</strong></td><td>77</td><td>$8.449.080</td></tr>
+      <tr><td>4</td><td><strong>Salama Ir Light 240×340</strong></td><td>20</td><td>$6.629.500</td></tr>
+      <tr><td>5</td><td><strong>Salama Mia 200×290</strong></td><td>33</td><td>$5.774.500</td></tr>
+      <tr><td>6</td><td><strong>Sofá Urban Beige</strong></td><td>3</td><td><span class="up">$5.254.000</span></td></tr>
+      <tr><td>7</td><td><strong>Salama Ser 240×340</strong></td><td>15</td><td>$5.029.400</td></tr>
+      <tr><td>8</td><td><strong>Sofá Mora White Bouclé</strong></td><td>2</td><td><span class="up">$4.680.000</span></td></tr>
+      <tr><td>9</td><td><strong>Salama Ir Light 200×290</strong></td><td>26</td><td>$4.219.500</td></tr>
+      <tr><td>10</td><td><strong>Salama Ir Light 160×230</strong></td><td>37</td><td>$3.945.770</td></tr>
+    </tbody>
+  </table>
+  <div class="nb" style="margin-top:8px">8 de 10 productos son variantes de Salama — $63,4M combinados en 355 unidades. Salama Ser 200×290 solo (91 unidades) representa el 9,1% de toda la facturación del mes.</div>
+</div>
+
+<!-- TIKTOK -->
+<div class="card">
+  <div class="st">TikTok — agosto completo</div>
+  <div class="g g3" style="margin-bottom:10px">
+    <div class="mc"><p class="ml">Inversión total TikTok</p><p class="mv">$704.832</p><p class="ms">Awareness + Followers + Interacción</p></div>
+    <div class="mc"><p class="ml">Followers TikTok</p><p class="mv">1.168</p><p class="ms">$200.857 inv · CPF $172</p></div>
+    <div class="mc"><p class="ml">Alcance Awareness</p><p class="mv">569.691</p><p class="ms">1.163.981 impresiones</p></div>
+  </div>
+  <div class="nb">TikTok mantiene su rol de canal de awareness y crecimiento de comunidad, con CPF $172 — más eficiente que Meta ($252). La campaña de Interacción_LS acumula 362 followers adicionales como resultado secundario del contenido de Live Shopping.</div>
+</div>
+
+<!-- SEGUIDORES META (AL FINAL) -->
+<div class="card">
+  <div class="st">Seguidores Meta — agosto completo</div>
+  <div class="g g4" style="margin-bottom:10px">
+    <div class="mc"><p class="ml">Followers PAID</p><p class="mv">16.932</p><p class="ms">546/día promedio</p></div>
+    <div class="mc"><p class="ml">CPF promedio</p><p class="mv">$252</p><p class="ms">vs $249 en julio</p></div>
+    <div class="mc"><p class="ml">CPF mejor semana (16-23)</p><p class="mv up">$204</p><p class="ms up">Mejor semana del mes</p></div>
+    <div class="mc"><p class="ml">Inversión seguidores</p><p class="mv">$4,27M</p><p class="ms">Plan $4,88M → 87,5%</p></div>
+  </div>
+
+  <div class="st" style="margin-top:14px">Anuncios con mejor performance</div>
+  <table class="t" style="margin-bottom:10px">
+    <thead><tr><th>Anuncio</th><th>Inv.</th><th>CTR</th><th>CPC</th><th>Tasa Eng.</th></tr></thead>
+    <tbody>
+      <tr><td><strong>REEL-Frascos-25-03-2026</strong><span class="tag">⭐ mayor inversión y mejor engagement</span></td><td>$1.343.192</td><td>3,90%</td><td>$53</td><td><span class="up">51,22%</span></td></tr>
+      <tr><td><strong>REEL-Solo_voy_a_ver_15-05-2026</strong></td><td>$1.161.449</td><td><span class="up">4,44%</span></td><td>$64</td><td>47,73%</td></tr>
+      <tr><td><strong>REEL-Frascos_06-07-2026</strong></td><td>$883.024</td><td>3,51%</td><td>$57</td><td>28,28%</td></tr>
+      <tr><td><strong>REEL-Facil_de_impresionar_15-05-2026</strong></td><td>$549.308</td><td>4,09%</td><td><span class="up">$48</span></td><td>36,20%</td></tr>
+    </tbody>
+  </table>
+  <div class="nb"><strong>Lo que funcionó todo el mes:</strong> el concepto "Frascos" fue la apuesta más consistente — 2 piezas distintas (25-03 y 06-07) sumaron $2,23M de inversión con el mejor engagement del mix (hasta 51,22%). REEL-Solo_voy_a_ver mantuvo el CTR más alto (4,44%) durante todo agosto. Ambos conceptos son los candidatos naturales para la línea de contenido de septiembre.</div>
+</div>
+
+</div>
+<script>
+Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif";
+Chart.defaults.font.size=11;
+const gc='rgba(0,0,0,0.05)',tc='#888780';
+// Facturación
+const fL=['1/8','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31'];
+const aD=[5843527,51360,9840560,5967495,10293511,8700890,6240897,7998371,6272569,4665289,6948551,4078399,4157680,4379533,5458238,11819299,8811294,7000484,6696246,4038280,4871369,5459116,5163695,6327872,8766837,2401510,3648972,9875428,10642390,6987344,7123896];
+const obj=Array(31).fill(6838710);
+new Chart(document.getElementById('chartFac'),{type:'bar',data:{labels:fL,datasets:[
+{label:'Agosto',data:aD,backgroundColor:'rgba(29,158,117,0.7)',borderRadius:4,order:2},
+{label:'Obj $6,84M/día',data:obj,type:'line',borderColor:'#D85A30',borderDash:[6,4],borderWidth:2,pointRadius:0,fill:false,order:1}
+]},options:{responsive:true,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:tc,boxWidth:12,padding:16}},tooltip:{callbacks:{label:ctx=>` $${(ctx.parsed.y/1000000).toFixed(2)}M`}}},scales:{x:{ticks:{color:tc,font:{size:9}},grid:{color:gc}},y:{ticks:{color:tc,callback:v=>'$'+(v/1000000).toFixed(0)+'M'},grid:{color:gc}}}}});
+// Sessions
+const sL=fL;
+const sD=[5078,6198,5505,5075,4785,4825,3849,3806,5398,4902,4381,4835,5046,4840,4369,6423,6061,5864,5257,4714,4365,4397,5783,5176,4568,4226,4664,5265,4109,10488,3167];
+const jAvg=Array(31).fill(4779);
+new Chart(document.getElementById('chartSess'),{type:'line',data:{labels:sL,datasets:[
+{label:'Sesiones diarias',data:sD,borderColor:'#185FA5',backgroundColor:'rgba(24,95,165,0.1)',fill:true,tension:0.3,pointRadius:2,pointBackgroundColor:'#185FA5',order:2},
+{label:'Media julio (4.779/día)',data:jAvg,borderColor:'#D85A30',borderDash:[6,4],borderWidth:2,pointRadius:0,fill:false,order:1}
+]},options:{responsive:true,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:tc,boxWidth:12,padding:16}},tooltip:{callbacks:{label:ctx=>` ${ctx.parsed.y.toLocaleString()}`}}},scales:{x:{ticks:{color:tc,font:{size:9}},grid:{color:gc}},y:{ticks:{color:tc},grid:{color:gc}}}}});
+
+// Category line chart
+const catLabels=['Julio','Agosto'];
+const catColors={'Alfombras':'#1D9E75','Muebles':'#185FA5','Bazar':'#BA7517','Dormitorio y Baño':'#D85A30','Decoración':'#8B4A9C','Organización':'#5F5E5A','Iluminación':'#C9922F','Aromas':'#7A4FA0'};
+const catShareData={
+  'Alfombras':[27.2,51.5],
+  'Muebles':[47.4,28.8],
+  'Bazar':[7.0,5.9],
+  'Dormitorio y Baño':[8.9,4.5],
+  'Decoración':[2.7,2.6],
+  'Organización':[2.7,2.7],
+  'Iluminación':[3.4,1.5],
+  'Aromas':[0.6,0.8]
+};
+new Chart(document.getElementById('chartCatLine'),{type:'line',data:{labels:catLabels,datasets:Object.keys(catShareData).map(cat=>({
+  label:cat,data:catShareData[cat],borderColor:catColors[cat],backgroundColor:catColors[cat],
+  borderWidth:cat==='Alfombras'||cat==='Muebles'?3:1.5,pointRadius:4,tension:0.2,
+  borderDash:cat==='Alfombras'||cat==='Muebles'?[]:[4,3]
+}))},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:tc,boxWidth:10,font:{size:9.5},padding:8}}},scales:{x:{ticks:{color:tc},grid:{display:false}},y:{ticks:{color:tc,callback:v=>v+'%'},grid:{color:gc},title:{display:true,text:'% share de facturación',color:tc,font:{size:9}}}}}});
+
+const pieOrder=['Alfombras','Muebles','Bazar','Dormitorio y Baño','Decoración','Organización','Iluminación','Aromas'];
+const pieColors=pieOrder.map(c=>catColors[c]);
+new Chart(document.getElementById('chartCatPieJul'),{type:'pie',data:{labels:pieOrder,datasets:[{data:pieOrder.map(c=>catShareData[c][0]),backgroundColor:pieColors,borderWidth:1,borderColor:'#fff'}]},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:tc,boxWidth:9,font:{size:8.5},padding:5}},tooltip:{callbacks:{label:ctx=>` ${ctx.label}: ${ctx.parsed}%`}}}}});
+new Chart(document.getElementById('chartCatPieAgo'),{type:'pie',data:{labels:pieOrder,datasets:[{data:pieOrder.map(c=>catShareData[c][1]),backgroundColor:pieColors,borderWidth:1,borderColor:'#fff'}]},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{color:tc,boxWidth:9,font:{size:8.5},padding:5}},tooltip:{callbacks:{label:ctx=>` ${ctx.label}: ${ctx.parsed}%`}}}}});
+</script></body></html>
